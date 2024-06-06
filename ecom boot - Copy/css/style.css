@@ -1,0 +1,397 @@
+@font-face {
+  font-family:sechead;
+  src: url("fonts/inglesa-script-bold.otf");
+}
+
+body {
+  overflow-x: hidden;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+.banner-text {
+  text-align: center;
+  margin-top: 50%;
+  margin-left: 50%;
+  margin-bottom: 50%;
+  margin-right: 50%;
+}
+
+.bg-image {
+  height: 100vh;
+  width: 100vw;
+  object-fit: cover;
+  padding: cover;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.img-logo {
+  height: 80px;
+  padding-left: inherit;
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+}
+
+.navbar-nav {
+  padding-right: 30px;
+
+}
+
+.nav-item {
+  padding: 10px 10px;
+  text-align: center;
+
+
+}
+
+.nav-link {
+  color: white;
+}
+
+.navbar-toggler {
+  border: none;
+  box-shadow: none;
+  height: 50px;
+  padding-right: 10px;
+}
+
+span {
+  height: 100px;
+}
+
+.navbar {
+  transition: all 0.90s;
+}
+
+.navbar-scrolled {
+  background-color: rgb(25, 82, 25);
+  box-shadow: 0 3px 10px rgb(0, 0, 0, 0.15);
+}
+
+@media (max-width: 768px) {
+  .img-logo {
+    margin: auto;
+  }
+}
+
+
+.product-section {
+  padding: 3rem 0;
+}
+
+.product-section .product-item {
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  position: relative;
+  padding-bottom: 50px;
+  cursor: pointer;
+}
+
+.product-section .product-item .product-thumbnail {
+  margin-bottom: 30px;
+  position: relative;
+  top: 0;
+  -webkit-transition: .3s all ease;
+  -o-transition: .3s all ease;
+  transition: .3s all ease;
+}
+
+.product-section .product-item h3 {
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.product-section .product-item strong {
+  font-weight: 800 !important;
+  font-size: 18px !important;
+}
+
+.product-section .product-item h3,
+.product-section .product-item strong {
+  color: #2f2f2f;
+  text-decoration: none;
+}
+
+.product-section .product-item .icon-cross {
+  position: absolute;
+  width: 35px;
+  height: 35px;
+  display: inline-block;
+  background: #2f2f2f;
+  bottom: 15px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+  margin-bottom: -17.5px;
+  border-radius: 50%;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: .3s all ease;
+  -o-transition: .3s all ease;
+  transition: .3s all ease;
+}
+
+.product-section .product-item .icon-cross img {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+/* .product-section .product-item:before {
+  bottom: 0;
+  left: 0;
+  right: 0;
+  position: absolute;
+  content: "";
+  background: #dce5e4;
+  height: 0%;
+  z-index: -1;
+  border-radius: 10px;
+  -webkit-transition: .3s all ease;
+  -o-transition: .3s all ease;
+  transition: .3s all ease;
+} */
+
+.product-section .product-item:hover .product-thumbnail {
+  top: -25px;
+}
+
+.product-section .product-item:hover .icon-cross {
+  bottom: 0;
+  opacity: 1;
+  visibility: visible;
+}
+
+.product-section .product-item:hover:before {
+  height: 70%;
+}
+
+.FEATURED-products {
+  text-align: center;
+  padding-top: 20px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+.object-fit-cover {
+  height: 100vh;
+  width: 100vw;
+  object-fit: cover;
+  padding: cover;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+
+
+footer{
+  margin-top: auto;
+}
+
+
+
+
+img.footer-img {
+  display: block;
+  margin: 0 auto;
+  height: 100px;
+}
+
+div.col-sm-12.col-md-6 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  /* adjust the height according to your needs */
+  margin-top: 65px;
+}
+
+div.col-6.col-md-3 {
+  align-items: center;
+  justify-content: center;
+  color: white;
+  margin-top: 25px;
+  padding-left: 40px;
+}
+
+.site-footer{
+  background-color: rgb(25, 82, 25);
+  color: white;
+}
+
+.site-footer hr.small{
+  margin: 0; 
+}
+
+.site-footer h6{
+  margin-top: 5px;
+  letter-spacing: 2px;
+}
+.site-footer a{
+  color: white;
+  text-decoration: none;
+}
+.site-footer a:hover{
+  color: grey;
+  text-decoration: none;
+} 
+
+.footer-links{
+  padding-left: 0;
+  list-style: none;
+}
+
+.footer-links li{
+  display: block;
+}
+
+.footer-links a{
+  color: white;
+}
+
+.footer-links a:active,
+.footer-links a:focus,
+.footer-links a:hover{
+  color: grey ;
+  text-decoration: none;
+}
+/* .f-announcment_bar {
+  width: max-content;
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  gap: 8vw;
+  position: relative;
+  overflow: hidden;
+  animation: f-marquee 30s linear infinite;
+  background-color: rgb(25, 82, 25);;
+  color: rgb(255, 255, 255);
+
+}
+@keyframes f-marquee{
+  0%{
+    left: 0%;
+  }
+
+  100%{
+    left: -100%;
+  }
+} */
+
+.site-footer .social-icons {
+  text-align: right;
+  padding: 0%;
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+
+.site-footer .social-icons a{
+  width:40px;
+  height: 40px;
+  line-height: 40px;
+  margin-left: 0;
+  margin-right: 0;
+  border-radius: 100%;
+
+}
+
+.copyright-text{
+  margin: 0;
+
+}
+
+@media (max-width:991px){
+  .site-footer[class^="col-"]{
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width:767px){
+  .site-footer{
+    padding-bottom: 0;
+  }
+  .site-footer .copyright-text,
+  .site-footer .social-icons{
+    text-align: center;
+    padding: 0%;
+  }
+}
+
+.social-icons{
+  color: white;
+}
+.social-icons ul{
+  padding: 100px;
+
+}
+.social-icons li{
+  display: inline-block;
+  margin-bottom: 4px;
+  padding: 0;
+}
+
+.social-icons a {
+
+   color: white;
+   font-size: 16px;
+   display: inline-block;
+   line-height: 44px;
+   height: 44px;
+   width: 44px;
+   text-align: center;
+   text-decoration: none;
+   margin-right: 8px;
+   border-radius: 100%;
+   -webkit-transition: all 0.2s linear;
+   -o-transition: all 0.2s linear;
+   transition: all 0.2s linear;
+   z-index: 9999;
+}
+
+.social-icons a:active,
+.social-icons a:focus,
+.social-icons a:hover{
+  color: grey;
+  background: rgb(8, 46, 8);
+}
+
+
+.accordion-button:not(.collapsed){
+  background:rgb(25, 82, 25);
+  color: white;
+  border: 0;
+}
+.accordion-item{
+  background-color: rgb(25, 82, 25);
+  color: white;
+  border: 0;
+}
+.accordion{
+  --bs-accordion-btn-focus-box-shadow: 0 0 0 0rem rgba(25, 82, 25);
+}
+
+/* careers  */
+
+.careers-content{
+  padding-bottom: 40px;
+}
+.careers-content p{
+  font-size: 20px;
+
+}
